@@ -3,4 +3,6 @@ function somar(num1: number, num2: number): number {
 }
 
 const resultado = somar(1, 2);
-console.log(resultado); //3
+const aula01 = () => console.log(resultado); //3
+
+export default aula01;

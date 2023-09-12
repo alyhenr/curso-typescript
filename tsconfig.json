@@ -2,9 +2,12 @@
   "compilerOptions": {
     "outDir": "./dist",
     "esModuleInterop": true,
-    "module": "CommonJS",
+    "module": "ES6",
     "moduleResolution": "Node",
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowImportingTsExtensions": true
   },
   "ts-node": {
     "esm": true
