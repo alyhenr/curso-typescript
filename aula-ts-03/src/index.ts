@@ -15,7 +15,7 @@ function showResult(result: number): void {
   if (isEven(result)) {
     console.log(`The result is ${result} and it's even!`);
   } else {
-    console.log(`The result is ${result} and it's not even!`);
+    console.log(`The result is ${result} and it's odd!`);
   }
 }
 
@@ -28,6 +28,4 @@ function generateNumbers(): Array<number> {
 
 const [n1, n2] = generateNumbers();
 const [n3, n4] = generateNumbers();
-const aula03 = () => showResult(sum(multiply(n1, n2), multiply(n3, n4)));
-
-export default aula03;
+showResult(multiply(sum(n1, n2), sum(n3, n4)));
